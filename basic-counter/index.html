@@ -1,0 +1,36 @@
+<DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>VueJS</title>
+    <link rel="stylesheet" href="css/default.css">
+    <script src="vue.js"></script>
+  </head>
+  <body>
+  <div id="app" class="container">
+    <button @click="increase" class="button">Up 1</button>
+    <button @click="decrease" class="button">Down 1</button>
+    <hr>
+    <p class="counter">{{ counter }}</p>
+  </div>
+
+    <script>
+        new Vue({
+        el: '#app',
+        data: {
+          counter: 0
+          },
+        methods: {
+          increase: function() {
+            this.counter++;
+          },
+          decrease: function() {
+            this.counter--;
+          }
+        }
+        });
+    </script>
+
+  </body>
+</html>
