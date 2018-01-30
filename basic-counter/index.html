@@ -9,7 +9,7 @@
   </head>
   <body>
   <div id="app" class="container">
-    <button @click="increase" class="button">Up 1</button>
+    <button @click="increase" class="button">Up 4</button>
     <button @click="decrease" class="button">Down 1</button>
     <div class="counter">
       <p>{{ counter }}</p>
@@ -24,7 +24,7 @@
           },
         methods: {
           increase: function() {
-            this.counter+= 2;
+            this.counter+= 4;
           },
           decrease: function() {
             this.counter--;
