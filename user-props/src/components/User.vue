@@ -7,14 +7,14 @@
         <p>Age: {{ age }}</p>
         <hr>
         <div class="row">
-            <div class="col-xs-12 col-sm-6">
+            <div class="col-xs-12">
                 <app-user-detail
                   :name="name"
                   @nameWasReset="name = $event"
                   :userAge="age">
                 </app-user-detail>
             </div>
-            <div class="col-xs-12 col-sm-6">
+            <div class="col-xs-12">
                 <app-user-edit
                   :userAge="age"
                   @ageWasEdited="age = $event">
