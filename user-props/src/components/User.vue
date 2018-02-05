@@ -37,7 +37,7 @@
     },
     methods: {
       changeName() {
-        this.name = 'Savage';
+        this.name = 'Allison';
       }
     },
         components: {

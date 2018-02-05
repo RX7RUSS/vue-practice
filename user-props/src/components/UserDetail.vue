@@ -24,7 +24,7 @@
         return this.name;
       },
       resetName() {
-        this.name = 'Russ';
+        this.name = 'Default';
         this.$emit('nameWasReset', this.name);
       }
     },
