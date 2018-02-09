@@ -1,15 +1,15 @@
 <template>
     <div class="container">
     	<div>
-    		<p></p>
+    		<h1>Hello World</h1>
     	</div>
-    
+
     </div>
 </template>
 
 <script>
     export default {
-        
+
     }
 </script>
 
