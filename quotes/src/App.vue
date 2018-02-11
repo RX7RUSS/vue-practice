@@ -1,7 +1,7 @@
 <template>
     <div class="container">
     	<div>
-    		<h1>Hello World</h1>
+    		<h1>Famous Quotes</h1>
     	</div>
 
     </div>
