@@ -13,7 +13,7 @@
 
 <style>
   .panel-body {
-    font-family: 'Arizonia', cursive;
+    font-family: 'Courier', cursive;
     font-size: 24px
   }
 
