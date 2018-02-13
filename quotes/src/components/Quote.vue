@@ -1,5 +1,5 @@
 <template>
-  <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="col-sm-12 col-md-6 col-lg-4">
     <div class="panel panel-default">
       <div class="panel-body quote">
         <slot></slot>
@@ -13,8 +13,8 @@
 
 <style>
   .panel-body {
-    font-family: 'Courier', cursive;
-    font-size: 24px
+    font-family: 'Courier', sans-serif;
+    font-size: 24px;
   }
 
   .quote {
@@ -22,6 +22,8 @@
   }
 
   .quote:hover {
+    transition: all 0.75s ease;
     background-color: #ffe2e2;
+    transform: scale(1.05);
   }
 </style>
