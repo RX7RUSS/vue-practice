@@ -1,7 +1,7 @@
 <template>
   <div class="col-sm-12 col-md-6 col-lg-4">
     <div class="panel panel-default">
-      <div class="panel-body quote">
+      <div class="panel-body post">
         <slot></slot>
       </div>
     </div>
@@ -17,11 +17,11 @@
     font-size: 24px;
   }
 
-  .quote {
+  .post {
     cursor: pointer;
   }
 
-  .quote:hover {
+  .post:hover {
     transition: all 0.75s ease;
     background-color: #ffe2e2;
     transform: scale(1.05);

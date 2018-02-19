@@ -5,8 +5,8 @@
           <div class="alert alert-info">Instantly add a post and click to delete it!</div>
         </div>
       </div>
-      <app-new-quote @quoteAdded="newQuote"></app-new-quote>
-      <app-quote-grid :quotes="quotes" @quoteDeleted="deleteQuote"></app-quote-grid>
+      <app-new-post @postAdded="newPost"></app-new-post>
+      <app-post-grid :post="post" @postDeleted="deletePost"></app-post-grid>
       <div class="row">
         <div class="col-sm-12 text-center">
           <div class="alert alert-info">Instantly add a post and click to delete it!</div>
@@ -16,27 +16,27 @@
 </template>
 
 <script>
-  import QuoteGrid from './components/QuoteGrid.vue';
-  import NewQuote from './components/NewQuote.vue';
+  import PostGrid from './components/PostGrid.vue';
+  import NewPost from './components/NewPost.vue';
 
     export default {
       data: function() {
         return {
-          quotes: ['Example Placeholder Blog Post'],
-          maxQuotes: 10
+          post: ['Example Placeholder Blog Post'],
+          maxposts: 10
         }
       },
       methods: {
-        newQuote(quote) {
-          this.quotes.push(quote);
+        newPost(post) {
+          this.post.push(post);
         },
-        deleteQuote(index) {
-          this.quotes.splice(index, 1);
+        deletePost(index) {
+          this.post.splice(index, 1);
         }
       },
       components: {
-        appQuoteGrid: QuoteGrid,
-        appNewQuote: NewQuote
+        appPostGrid: PostGrid,
+        appNewPost: NewPost
       }
     }
 </script>
