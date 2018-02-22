@@ -1,7 +1,6 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <h2>Search The NASA Image Database</h2>
     <form v-on:submit.prevent="getResults(query)">
       <input type="text" placeholder="Type search here" v-model="query" />
     </form>
@@ -22,7 +21,7 @@ export default {
   name: 'Search',
   data () {
     return {
-      msg: 'Search',
+      msg: 'Search The NASA Image Database',
       query: '',
       results: ''
     }
@@ -31,8 +30,8 @@ export default {
     getResults (query) {
       axios.get('https://images-api.nasa.gov/search?q=' + query + '&media_type=image').then( response => {
         console.log(response.data.collection.items);
-        this.results = response.data.collection.items;
-      });
+        this.results = response.data.collection.items
+      })
     }
   }
 }
