@@ -22,8 +22,10 @@
   }
 
   .post:hover {
-    transition: all 0.75s ease;
+    transition: all 0.5s ease;
     background-color: #ffe2e2;
-    transform: scale(1.05);
+    color: #ffe2e2;
+    transform: scale(1.02);
+    border-radius: 5px;
   }
 </style>
