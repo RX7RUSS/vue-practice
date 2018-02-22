@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <h2>Searh NASA Image Database</h2>
+    <h2>Search The NASA Image Database</h2>
     <form v-on:submit.prevent="getResults(query)">
       <input type="text" placeholder="Type search here" v-model="query" />
     </form>
@@ -41,7 +41,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .results img {
-  height: 200px;
+  width: 500px;
   margin: 10px;
 }
 
