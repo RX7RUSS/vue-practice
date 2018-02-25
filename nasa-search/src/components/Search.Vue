@@ -28,8 +28,8 @@ export default {
   },
   methods: {
     getResults (query) {
-      axios.get('https://images-api.nasa.gov/search?q=' + query + '&media_type=image').then( response => {
-        console.log(response.data.collection.items);
+      axios.get('https://images-api.nasa.gov/search?q=' + query + '&media_type=image').then(response => {
+        console.log(response.data.collection.items)
         this.results = response.data.collection.items
       })
     }

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg">
     <Search/>
   </div>
 </template>
