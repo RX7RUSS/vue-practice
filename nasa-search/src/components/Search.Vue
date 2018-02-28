@@ -21,7 +21,7 @@ export default {
   name: 'Search',
   data () {
     return {
-      msg: 'Search NASA Image Database',
+      msg: 'Search The NASA Image Database',
       query: '',
       results: ''
     }
