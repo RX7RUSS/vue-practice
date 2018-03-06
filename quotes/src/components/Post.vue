@@ -14,7 +14,7 @@
 <style>
   .panel-body {
     font-family: 'Courier', sans-serif;
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .post {
