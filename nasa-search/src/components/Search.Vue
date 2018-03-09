@@ -40,7 +40,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .results img {
-  width: 400px;
+  width: 600px;
   margin: 10px;
 }
 
