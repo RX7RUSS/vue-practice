@@ -4,7 +4,7 @@
     <h1>{{ msg }}</h1>
 
     <qrcode-reader class="cam-wrap" @decode="onDecode" :paused="paused">
-      <b :content="content">{{ content }}</b>
+      <b :content="content">QR Code Content: {{ content }}</b>
     </qrcode-reader>
 
   </div>
@@ -59,5 +59,7 @@ a {
   flex-direction: column;
   height: 400px;
 }
-
+b {
+  font-size: 36px;
+}
 </style>
