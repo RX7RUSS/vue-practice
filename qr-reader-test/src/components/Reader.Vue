@@ -25,7 +25,7 @@ export default {
   },
   methods: {
     onDecode (content) {
-      this.paused = false
+      this.paused = true
       console.log(content)
     }
   }
