@@ -3,7 +3,9 @@
 
     <h1>{{ msg }}</h1>
 
-    <qrcode-reader class="cam-wrap" @decode="onDecode" :paused="paused"></qrcode-reader>
+    <qrcode-reader class="cam-wrap" @decode="onDecode" :paused="paused">
+      <b :content="content">{{ content }}</b>
+    </qrcode-reader>
 
   </div>
 </template>
@@ -18,9 +20,8 @@ export default {
   data () {
     return {
       msg: 'Test of vue-qrcode-reader component',
-      query: '',
-      results: '',
-      paused: false
+      paused: false,
+      content: ''
     }
   },
   methods: {
@@ -53,9 +54,10 @@ li {
 a {
   color: #42b983;
 }
-.cam-wrap{
+.cam-wrap {
   display: flex;
   flex-direction: column;
-
+  height: 400px;
 }
+
 </style>
