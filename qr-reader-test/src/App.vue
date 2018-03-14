@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg">
-    <Search/>
+    <Reader/>
   </div>
 </template>
 
 <script>
-import Search from './components/Search'
+import Reader from './components/Reader'
 
 export default {
   name: 'App',
   components: {
-    Search
+    Reader
   }
 }
 </script>
