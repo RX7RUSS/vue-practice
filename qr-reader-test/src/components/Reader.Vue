@@ -4,7 +4,9 @@
     <h1>{{ msg }}</h1>
 
     <qrcode-reader class="cam-wrap" @decode="onDecode" :paused="paused">
-      <b :content="content">QR Code Content: {{ content }}</b>
+      <div class="decoded-content">
+        <b>QR Code Info {{ content }}</b>
+      </div>
     </qrcode-reader>
 
   </div>
@@ -28,6 +30,7 @@ export default {
     onDecode (content) {
       this.paused = true
       console.log(content)
+      // this.$emit('content')
     }
   }
 }
@@ -61,5 +64,8 @@ a {
 }
 b {
   font-size: 36px;
+}
+.decoded-content {
+  height: 100px;
 }
 </style>
