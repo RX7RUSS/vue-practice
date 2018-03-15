@@ -1,4 +1,4 @@
-# nasa-search
+# qr-reader-test
 
 > A Vue.js project
 
