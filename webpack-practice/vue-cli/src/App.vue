@@ -12,7 +12,7 @@ export default {
   name: 'app',
   data () {
     return {
-      msg: 'My first Webpack Vue App'
+      msg: 'Webpack Vue App'
     }
   }
 }
