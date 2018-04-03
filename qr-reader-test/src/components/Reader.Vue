@@ -5,7 +5,7 @@
 
     <qrcode-reader class="cam-wrap" @decode="onDecode" :paused="paused">
       <div class="decoded-content">
-        <b>QR Code Data {{ content }}</b>
+        <b>QR Code Decoded Data {{ content }}</b>
       </div>
     </qrcode-reader>
 
