@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'myGreeting',
   data () {
     return {
       msg: 'QR Code Reader Test'
