@@ -19,7 +19,7 @@ export default {
   }),
 
   created () {
-    axios.get('https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,IOT,BCH,NANO,BNB,XLM,XRP&tsyms=USD')
+    axios.get('https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,XRP,XLM,ETH,NANO,BCH,BNB&tsyms=USD')
       .then(response => {
         this.cryptos = response.data
         console.log(response)
@@ -38,12 +38,13 @@ export default {
     background: #f1f1f1;
   }
 
-  div#crypto-container {
+  #crypto-container {
     background: white;
     width: 70%;
     margin: 0 auto 4px auto;
     padding: 1rem;
     box-shadow: 1px 1px 0 lightgrey;
+    border-radius: 10px;
   }
 
   .title {
@@ -55,6 +56,7 @@ export default {
     margin: 0 auto 4px auto;
     padding: 1rem;
     box-shadow: 1px 1px 0 lightgrey;
+    border-radius: 10px;
   }
 
   span.left {
