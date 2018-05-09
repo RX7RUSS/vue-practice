@@ -49,7 +49,7 @@ export default {
 
   .title {
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 800;
     background: white;
     width: 70%;
