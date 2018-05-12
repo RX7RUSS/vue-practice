@@ -23,6 +23,7 @@ export default {
       .then(response => {
         this.cryptos = response.data
         console.log(response)
+        console.log(response)
       })
       .catch(e => {
         this.errors.push(e)
