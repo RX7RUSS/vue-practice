@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <div class="title">Current Crypto Prices in USD</div>
+    <div class="title">Crypto Prices in USD</div>
     <div id="crypto-container" v-for="(value, key) in cryptos" :key="key">
       <span class="left">{{ key }}</span>
       <span class="right">${{ value.USD }}</span>
