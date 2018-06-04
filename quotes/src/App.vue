@@ -2,7 +2,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12 text-center">
-          <div class="alert alert-info">Instantly add a post and click to delete it!</div>
+          <div class="alert alert-info">Create your post and click to delete it!</div>
         </div>
       </div>
       <app-new-post @postAdded="newPost"></app-new-post>
