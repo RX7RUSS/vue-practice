@@ -19,7 +19,7 @@ export default {
   }),
 
   created () {
-    axios.get('https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,XRP,XLM,ETH,NANO,BCH,BNB,LTC&tsyms=USD')
+    axios.get('https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,XRP,XLM,ETH,NANO,BCH,BNB&tsyms=USD')
       .then(response => {
         this.cryptos = response.data
         console.log(response)
