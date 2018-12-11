@@ -9,7 +9,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Nasa Search App'
+      msg: 'Nasa Photo Search App'
     }
   }
 }
