@@ -1,6 +1,8 @@
 <template>
   <div class="hello">
+
     <h1>{{ msg }}</h1>
+
     <form v-on:submit.prevent="getResults(query)">
       <input type="text" placeholder="Type search here" v-model="query" />
     </form>
@@ -10,7 +12,6 @@
         <img v-bind:src="result.links[0].href" />
       </div>
     </div>
-
 
   </div>
 </template>
